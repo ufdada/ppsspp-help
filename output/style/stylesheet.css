@@ -1,15 +1,10 @@
 @font-face {
-  font-family: 'Acid';
-  src: url('font/acid.otf');
-
-  font-family: 'Edelsans';
-  src: url('font/edelsans_ultralight.otf');
-  src: url('font/edelsans_regular.otf');
-  
+font-family: 'Roboto';
+  src: url('font/Roboto-Condensed.ttf');
 }
 
 body {
-  font-family: 'Acid', 'Edelsans', Helvetica, arial, sans-serif;
+  font-family: 'Roboto', Arial, Verdana, Tahoma, sans-serif;
   font-size: 1.2em;
   line-height: 1.6;
   padding-top: 1%;
@@ -89,18 +84,19 @@ h6 tt, h6 code {
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 2.5em;
+  border-bottom: 1px solid #cccccc;
   color: black;
 }
 
 h2 {
-  font-size: 2.8em;
+  font-size: 2em;
   border-bottom: 1px solid #cccccc;
   color: black;
 }
 
 h3 {
-  font-size: 2.3em;
+  font-size: 1.8em;
 }
 
 h4 {
@@ -117,7 +113,7 @@ h6 {
 }
 
 p, blockquote, ul, ol, dl, li, table, pre {
-  margin: 2% 0 2% 0;
+  margin: 3px 0 3px 0;
 }
 
 hr {
@@ -166,11 +162,11 @@ ul, ol {
 }
 
 ul :first-child, ol :first-child {
-  margin-top: 0;
+  margin-top: 3px;
 }
 
 ul :last-child, ol :last-child {
-  margin-bottom: 0;
+  margin-bottom: 3px;
 }
 
 dl {

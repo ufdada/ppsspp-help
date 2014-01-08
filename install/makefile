@@ -1,4 +1,4 @@
-installl:
+install:
 	markdown
 
 markdown:

@@ -1,0 +1,4 @@
+lib: kramdown
+
+kramdown:
+  toc_levels: 1..4

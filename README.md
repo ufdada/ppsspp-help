@@ -12,7 +12,15 @@ Navigate to the install folder and run ```make install```
 
 This will install markdown using  ```gem```. If you do not have gem, please install it from [here](http://rubygems.org/pages/download)
 
+__Easiest way for Windows users:__ Just download and install the [RailsInstaller](http://www.railsinstaller.org/en) and run `/install/makefile.bat`
+
 Once you have markdown installed, you're done!
+
+Just edit the *.md files in the input directory and run
+`make all` on __Linux__
+
+or
+`makefile` on __Windows__
 
 ### Text editors ###
 
