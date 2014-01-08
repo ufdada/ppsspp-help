@@ -17,10 +17,7 @@ __Easiest way for Windows users:__ Just download and install the [RailsInstaller
 Once you have markdown installed, you're done!
 
 Just edit the *.md files in the input directory and run
-`make all` on __Linux__
-
-or
-`makefile` on __Windows__
+`make all`
 
 ### Text editors ###
 

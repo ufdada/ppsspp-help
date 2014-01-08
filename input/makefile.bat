@@ -1,1 +1,0 @@
-markdown -o "../output/" & "../output/index.html" & ruby postprocessor.rb & if %errorlevel% NEQ 0 pause

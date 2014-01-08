@@ -31,7 +31,7 @@ __Buffered mode__
 
 This is the standard mode. The PSP can render to any location in its VRAM and use as either the scanout buffer (what you see on the screen) or textures. Many games use this to implement special effects, or simply to implement 30fps (you need to show the same buffer twice). We simulate this by allocating an OpenGL FBO for every PSP framebuffer location.
 
-> Note: This option is mandatory for many games, including __Grand Theft Auto Liberty City Stories__ and __Grand Theft Auto Vice City Stories__, which show black screen without it.
+> **Note:** This option is mandatory for many games, including __Grand Theft Auto Liberty City Stories__ and __Grand Theft Auto Vice City Stories__, which show black screen without it.
 
 __Non-buffered mode__
 
@@ -39,25 +39,38 @@ Disabling the buffered mode is a speed hack that may or may not speed up some ga
 
 Due to emulation bugs, some games are improved in non-buffered mode.
 
-* __Sword Art Online__ It fixes the overbrightness issue.
-<!-- * __Wipeout Pulse and Pure__ It fixes the overbrightness issue. Note: Already fixed in current version -->
+* __Sword Art Online__
+
+  It fixes the overbrightness issue.
+
+<!-- * __Wipeout Pulse and Pure__ 
+  
+  It fixes the overbrightness issue. Note: Already fixed in current version 
+
+-->
 
 __Read framebuffers to memory (CPU)__
 
 This option is a solution to fix some graphics issues in some games, but this option is slow. Games that do not need it may be worse with this option.
 
 * __Breath of Fire 3__
+
 * __Danganronpa__
+
 * __Final Fantasy Tactics: The War of the Lions__
-  
+
   It fixes the transparency in menus open in the map.
+  
 * __Soul Calibur: Broken Destiny__
-  
+
   It allows to take photos of created characters.
-* __The Legend of Heroes: Trails in the Sky__
   
+* __The Legend of Heroes: Trails in the Sky__
+
   It fixes the transparent menus and the screenshots to create icons of saved games.
+  
 * __The Third Birthday__
+
 * __Ys Seven__
 
   It fixes the minimap, the transparency in the full map, the screenshots to create icons of saved games and the darkness in Flame Sanctum.
@@ -91,12 +104,12 @@ Speeds below 100% allow to play in slow motion.
 
 __Postprocessing Shader__ 
 
-> Note: *buffered rendering __must__ be enabled to use this*
+> **Note:** *buffered rendering __must__ be enabled to use this*
 
 Allows one to use custom shaders that add effects such as bloom and grayscale.
 
 
-Types of shaders:
+**Types of shaders:**
 
 *`Off`*: Disable shaders altogether.
 
@@ -149,8 +162,14 @@ __Hardware Transform__
 
 Vertex Shader uses it to make all the complex calculations that are required for rendering in the hardware (GPU or Video Card) instead of doing it on the processor. It tends to be much faster and gives a performance boost when enabled.
 However, due to bugs, some games are fixed when this option is disabled:
-* __Dangan Ronpa__ It fixes the crashes.
-* __Tekken 5 Dark Resurrection__ It fixes the health bars.
+
+* __Dangan Ronpa__
+
+  It fixes the crashes.
+
+* __Tekken 5 Dark Resurrection__
+
+  It fixes the health bars.
 
 
 __Vertex Cache__
@@ -175,7 +194,7 @@ There is generally no point in going beyond 3x texture scaling unless you are ru
 
 __Upscale Level__
 
-The type of Upscale to use.
+*The type of Upscale to use.*
 
 *`Auto`*: Scales textures dependently of rendering resolution.
 
@@ -239,7 +258,9 @@ __Always Depth Write__
 
 Enabling this simply assumes that all objects will depth write, causing severe graphical glitches on many games. Few games require this option enabled to work properly.
 
-* __Saint Seiya Omega__ It fixes invisible characters.
+* __Saint Seiya Omega__
+  
+  It fixes invisible characters.
 
 __Texture Coord Speedhack__
 
@@ -542,9 +563,8 @@ Changelog:
 
 * Many more games run and some games run faster
   - The God of War games should now run well on modest PCs and for example the Monster Hunter games are becoming playable on fast phones (although without sound).
-
 * Improved UI
-+ Recent list and game icons in the game selector
+* Recent list and game icons in the game selector
 
 ### Version 0.7.0:
 
